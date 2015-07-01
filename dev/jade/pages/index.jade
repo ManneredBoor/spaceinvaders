@@ -1,0 +1,12 @@
+extends ../layouts/default
+
+block head
+	- pageTitle = 'Space Invaders';
+	- pageDescription = '';
+	- pageKeywords = '';
+
+block scripts
+	+script(['js/main.js'])
+
+block content
+	include ../blocks/main

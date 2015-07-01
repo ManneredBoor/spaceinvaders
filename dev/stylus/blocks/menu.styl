@@ -1,0 +1,85 @@
+.menu
+	position absolute
+	top 0
+	right 0
+	bottom 0
+	left 0
+	margin auto
+	display block
+	text-align center
+	max-height 100%
+	max-width 100%
+
+	&:after
+		content ''
+		height 100%
+
+	&:after
+	&__inner
+		display inline-block
+		vertical-align middle
+
+	&__inner
+		max-width 95%
+		padding 20px 20px 80px 20px
+
+	&__subtitle
+		line-height 1.4
+		margin-bottom 1rem
+		font-size 1rem
+
+		.m-touch &_pc
+			display none
+
+		.m-touch &_mob
+			display block
+
+		.m-no-touch &_pc
+			display block
+
+		.m-no-touch &_mob
+			display none
+
+	&__title
+		line-height 1
+		margin-bottom 6rem
+		font-size 4rem
+
+	&__btn
+		position relative
+		line-height 1
+		padding 0.8rem 2.4rem 0.8rem
+		font-size 2.4rem
+		cursor pointer
+		display inline-block
+		border 3px solid #fff
+		background-color $color-black
+
+		&:before
+			position absolute
+			content ''
+			display block
+			border 1px solid #fff
+			top -8px
+			right -8px
+			bottom -8px
+			left -8px
+
+		.m-no-touch &:hover
+			color $color-black
+			border-color transparent
+			background-color #fff
+			transform translateY(-2px)
+
+			&:before
+				transform translateY(2px)
+
+		&:active
+		.menu &:active
+			color $color-black
+			border-color transparent
+			background-color #fff
+			transform translateY(2px)
+
+			&:before
+				transform translateY(-2px)
