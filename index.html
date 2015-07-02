@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="cleartype" content="on">
+		<title>Space Invaders</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+		<link href="css/main.css" rel="stylesheet">
+		<script src="js/modernizr.js"></script>
+	</head>
+
+	<body>
+		<div class="space__bg"></div>
+		<canvas id="space" class="space"></canvas>
+		<div id="main" class="menu">
+			<div class="menu__inner">
+				<div class="menu__title">THE SPACE INVADERS</div>
+				<div class="menu__subtitle menu__subtitle_pc">space for shoot
+					<br>arrows for move
+					<br>m for mute / unmute
+					<br>p for pause / unpause</div>
+				<div class="menu__subtitle menu__subtitle_mob">tap for shoot
+					<br>tilt for move</div>
+				<div class="menu__btn play">PLAY</div>
+			</div>
+		</div>
+		<div id="end" class="menu i-hidden">
+			<div class="menu__inner">
+				<div class="menu__subtitle score"></div>
+				<div class="menu__title">THE END</div>
+				<div class="menu__subtitle">of human race</div>
+				<div class="menu__btn play">PLAY AGAIN</div>
+			</div>
+		</div>
+		<div id="win" class="menu i-hidden">
+			<div class="menu__inner">
+				<div class="menu__subtitle score"></div>
+				<div class="menu__title">WELL DONE EARTHLING</div>
+				<div class="menu__subtitle">this time you win</div>
+				<div class="menu__btn play">PLAY AGAIN</div>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+
+</html>
